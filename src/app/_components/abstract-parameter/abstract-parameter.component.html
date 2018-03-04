@@ -1,0 +1,9 @@
+<p>
+ basic abstract-parameter works!
+</p>
+  <div  *ngFor="let param of _uiParameters">
+      <number-field-wrapper *ngIf="param.type === 'number'"></number-field-wrapper>
+      <string-field-wrapper *ngIf="param.type === 'string'"></string-field-wrapper> 
+      <date-field-wrapper *ngIf="param.type === 'date'"></date-field-wrapper>  
+      <date-range-field-wrapper *ngIf="param.type === 'dateRange'"></date-range-field-wrapper>
+  </div>
